@@ -1,0 +1,199 @@
+body{
+    background-color: #e9ecf4;
+}
+
+.fondo{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-image: url(../images/madera.jpg); width: 100%;
+    color: #fff;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 150px;
+    background-size: contain;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    position: relative;
+    left: 10px;
+}
+
+li{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 90px;
+    right: 10px;
+}
+
+li a{
+    color: #fff;
+    border: #fff 1px solid;
+    width: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+li a:hover{
+    padding: 15px;
+}
+
+.pie a{
+    color: #fff;
+}
+
+.alinear{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 15%);
+    gap: 10px;
+}
+
+.imagenes_index{
+    border: 1px solid;
+    font-size: 200px;
+    height: 500px;
+    width: 500px;
+    padding: 0%;
+    margin: auto;
+}
+
+.card{
+    background-color: rgb(197, 194, 194);
+    text-align: center;
+}
+
+h2{
+    font-style: italic;
+    color: #684108;
+    border: 1px solid #111;
+    border-radius: 3px;
+}
+
+.subtitulo1{
+    grid-column: 1;
+    justify-content: space-around;
+    border: 1px solid #111;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    left: 30%;
+   margin-top: 20px;
+}
+
+.subtitulo_variado{
+    text-align: center;
+}
+
+.titulo_contacto{
+    width: 90px;
+    height: 30px;
+    position: relative;
+    left: 40%;
+    text-align: center;
+}
+
+.parrafo_contacto{
+    font-size: 26px;
+    position: relative;
+    bottom: 270px;
+    border: 1px solid;
+    border-radius: 3px;
+    height: 213%;
+}
+
+.parrafo{
+    grid-column: 1;
+    grid-row: 2;
+    border: 1px #111 solid;
+    position: relative;
+    bottom: 16px;
+    font-size: 26px;
+    height: 310px;
+    margin: 5%;
+}
+
+.pie{
+    position: relative;
+    top: 50%;
+    right: 10px;
+}
+
+.parrafo_pie{
+    position: relative;
+    top: 25%;
+    left: 10px;
+}
+
+.las_imagenes{
+    border: 1px solid;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 870px) {
+
+    .alinear{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 15%);
+    }
+    
+    .subtitulo1{
+        grid-row: 1;
+        
+    }
+    
+    .parrafo{
+        grid-row: 2;
+        font-size: 13px;
+        height: 110px;
+
+    }
+
+    .imagenes_index{
+        grid-row: 3;
+        right: 75px;
+    }
+    
+    .las_imagenes{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row: 4;
+        height: 20%;
+        position: relative;
+        bottom: 40%;
+    }
+
+    .formulario{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr)
+    }
+
+    .titulo_contacto{
+        grid-row: 1;
+    }
+
+    .parrafo_contacto{
+        grid-row: 2;
+        height: 200px;
+    }
+
+    form{
+        grid-row: 3;
+    }
+}
